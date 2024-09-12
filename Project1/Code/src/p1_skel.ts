@@ -905,7 +905,6 @@ class BackgroundDisplay extends ScreenObject{
         ctx.fillStyle = 'black';
         const metrics : TextMetrics = ctx.measureText("Texty");
         const fontHeight : number = metrics.fontBoundingBoxAscent + metrics.fontBoundingBoxDescent;
-        const leading = 10;
 
         // Track line positions
         let ypos : number = 20 + fontHeight;
@@ -914,10 +913,10 @@ class BackgroundDisplay extends ScreenObject{
         // === YOUR CODE HERE ===
         // draw message 1
         ctx.fillText(this.msg1, xpos, ypos);
-        ypos += fontHeight + leading;
+        ypos += fontHeight;
         // draw message 2
         ctx.fillText(this.msg2, xpos, ypos);
-        ypos += fontHeight + leading;
+        ypos += fontHeight;
         // draw message3
         ctx.fillText(this.msg3, xpos, ypos);
 
