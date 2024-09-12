@@ -18,7 +18,7 @@ class Cat implements Animal{
 
 // Create a function called 'printAnimalName' that takes an argument 'animal' of type 'Animal'
 // TODO
-function printAnimalName(animal: Animal){
+function printAnimalName(animal: Animal | null){
     if(animal === null)return;
     console.log(animal.name);
 }
